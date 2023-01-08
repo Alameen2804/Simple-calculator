@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Arithmetic</title>
+    <style>
+        h2{
+            color: chocolate;
+        }
+
+          .form-control{
+            width: 200px;
+            height: 15px;
+            padding: 6px 12px;
+            font-size: 14px;
+            color: #555;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+          }
+
+          .button {
+    background-color:blanchedalmond;
+    border: none;
+    color:brown;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-style: italic;
+    font-family: "Sofia", sans-serif;
+    font-weight: bold;
+  }
+
+    </style>
+    <script>
+        function Calculate()
+         {
+           var num1, num2, sum, sub, pro, div, mod; 
+           num1 = parseInt(document.getElementById("firstnumber").value);
+           num2 = parseInt(document.getElementById("secondnumber").value);
+           sum = num1 + num2;
+           sub = num1 - num2;
+           pro = num1 * num2;
+           div = num1 / num2;
+           mod = num1 % num2;
+           document.getElementById("Sumanswer").value = sum;
+           document.getElementById("Subanswer").value = sub;
+           document.getElementById("Proanswer").value = pro;
+           document.getElementById("Divanswer").value = div;
+           document.getElementById("Modanswer").value = mod;
+         }
+    </script>
+</head>
+<body style="text-align:center;">
+    <h1 style="color:chocolate;">JavaScript Arithmetic Calculator</h1>
+    <h2>Number-1: <input placeholder="Enter First Number" class="form-control" type="text" id="firstnumber" name="fname"></h2>
+    <h2>Number-2: <input placeholder="Enter Second Number" class="form-control" type="text" id="secondnumber" name="fname"></h2>
+    <input type="button" onclick="Calculate()" class="button" value="Calculate">
+    <h2><input placeholder="Addition" class="form-control" type="text" id="Sumanswer"></h2>
+    <h2><input placeholder="Substraction" class="form-control" type="text" id="Subanswer"></h2>
+    <h2><input placeholder="Multiplication" class="form-control" type="text" id="Proanswer"></h2>
+    <h2><input placeholder="Division" class="form-control" type="text" id="Divanswer"></h2>
+    <h2><input placeholder="Modulo Division" class="form-control" type="text" id="Modanswer"></h2>
+</body>
+</html>
